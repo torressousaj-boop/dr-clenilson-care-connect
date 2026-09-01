@@ -1,0 +1,34 @@
+import { useEffect, useState } from "react";
+import { CtaButton } from "./CtaButton";
+
+export function Navbar() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 24);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  return (
+    <header
+      className={`fixed inset-x-0 top-0 z-50 transition-colors duration-200 ease-out ${
+        scrolled ? "bg-ameixa shadow-[0_1px_0_0_rgba(232,225,214,0.14)]" : "bg-transparent"
+      }`}
+    >
+      <nav className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-4">
+        <a
+          href="#topo"
+          className="text-[1.0625rem] font-semibold tracking-tight text-areia"
+          style={{ fontFamily: "var(--font-display)" }}
+        >
+          Dr. Clenilson Júnior
+        </a>
+        <CtaButton size="sm" showIcon={false}>
+          Falar com o consultório
+        </CtaButton>
+      </nav>
+    </header>
+  );
+}
