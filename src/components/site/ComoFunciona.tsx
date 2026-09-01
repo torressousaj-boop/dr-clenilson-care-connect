@@ -59,19 +59,19 @@ export function ComoFunciona() {
           {etapas.map((e, i) => (
             <li
               key={e.titulo}
-              className="grid grid-cols-[4rem_1fr] gap-x-4 pb-16 last:pb-0 sm:grid-cols-[6rem_1fr]"
+              className="grid grid-cols-[4rem_1fr] gap-x-4 sm:grid-cols-[6rem_1fr]"
             >
               <div className="flex flex-col items-center">
                 {i === 3 && (
                   <svg
-                    viewBox="0 0 80 90"
-                    className="h-[90px] w-16 shrink-0 sm:w-24"
+                    viewBox="0 0 120 90"
+                    className="h-[90px] w-[120px] shrink-0"
                     fill="none"
                     aria-hidden="true"
                     focusable="false"
                   >
                     <path
-                      d="M40 0 V 22 C 40 56, 8 52, 10 30 C 12 12, 40 20, 40 54 V 90"
+                      d="M60 0 V 22 C 60 56, 26 52, 28 30 C 30 12, 60 20, 60 54 V 90"
                       stroke="var(--color-ambar-escuro)"
                       strokeWidth={2}
                       strokeLinecap="round"
@@ -83,8 +83,8 @@ export function ComoFunciona() {
                       }}
                     />
                     <text
-                      x={10}
-                      y={68}
+                      x={26}
+                      y={72}
                       textAnchor="middle"
                       fill="var(--color-tinta)"
                       fontSize={8}
@@ -102,7 +102,7 @@ export function ComoFunciona() {
                 />
               </div>
 
-              <div className={i === 3 ? "pt-[90px]" : undefined}>
+              <div className={`${i === 3 ? "pt-[90px]" : ""} ${i === 3 ? "pb-0" : "pb-16"}`}>
                 <p
                   className="text-[0.6875rem] uppercase tracking-[0.22em] text-tinta/70"
                   style={{ fontFamily: "var(--font-mono)" }}
