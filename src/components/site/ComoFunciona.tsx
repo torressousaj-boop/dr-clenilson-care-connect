@@ -83,7 +83,7 @@ export function ComoFunciona() {
                       }}
                     />
                     <text
-                      x={26}
+                      x={40}
                       y={72}
                       textAnchor="middle"
                       fill="var(--color-tinta)"
