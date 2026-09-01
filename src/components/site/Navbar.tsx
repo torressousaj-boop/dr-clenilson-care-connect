@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { CtaButton } from "./CtaButton";
+import { LogoSimbolo } from "./Logo";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -20,9 +21,10 @@ export function Navbar() {
       <nav className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-4">
         <a
           href="#topo"
-          className="text-[1.0625rem] font-semibold tracking-tight text-areia"
+          className="inline-flex items-center gap-3 text-[1.0625rem] font-semibold tracking-tight text-areia"
           style={{ fontFamily: "var(--font-display)" }}
         >
+          <LogoSimbolo className="h-7 w-7 shrink-0" />
           Dr. Clenilson Júnior
         </a>
         <CtaButton size="sm" showIcon={false}>

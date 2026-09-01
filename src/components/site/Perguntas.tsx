@@ -29,7 +29,7 @@ export function Perguntas() {
   return (
     <section className="bg-areia py-24 text-tinta md:py-32">
       <div className="mx-auto max-w-3xl px-6">
-        <p className="kicker">Perguntas que a família faz</p>
+        <p className="kicker kicker-claro">Perguntas que a família faz</p>
 
         <div className="mt-12 divide-y divide-tinta/15 border-y border-tinta/15">
           {perguntas.map((item, i) => {

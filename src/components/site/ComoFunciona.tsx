@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { useReveal } from "@/hooks/use-reveal";
 
 const etapas = [
@@ -23,48 +24,85 @@ const etapas = [
   },
 ];
 
+function usePrefersReducedMotion() {
+  const [reduced, setReduced] = useState(false);
+
+  useEffect(() => {
+    const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const update = () => setReduced(mq.matches);
+    update();
+    mq.addEventListener("change", update);
+    return () => mq.removeEventListener("change", update);
+  }, []);
+
+  return reduced;
+}
+
 export function ComoFunciona() {
   const { ref, visible } = useReveal<HTMLDivElement>(0.25);
+  const reduced = usePrefersReducedMotion();
+  const drawn = reduced || visible;
+
+  const lineStyle = reduced
+    ? { transform: "scaleY(1)", transition: "none" }
+    : {
+        transform: drawn ? "scaleY(1)" : "scaleY(0)",
+        transition: "transform 600ms ease-out",
+      };
 
   return (
     <section className="bg-areia py-24 text-tinta md:py-32">
       <div ref={ref} data-visible={visible} className="reveal mx-auto max-w-6xl px-6">
-        <p className="kicker">Como funciona</p>
+        <p className="kicker kicker-claro">Como funciona</p>
 
-        <div className="relative mt-12 pl-16 sm:pl-24">
-          <svg
-            className="pointer-events-none absolute left-0 top-0 h-full w-16 sm:w-24"
-            viewBox="0 0 80 720"
-            preserveAspectRatio="none"
-            aria-hidden="true"
-            focusable="false"
-          >
-            <path
-              d="M56 16 V 496 C 56 542, 20 542, 20 508 C 20 474, 56 480, 56 524 V 704"
-              fill="none"
-              stroke="var(--color-ambar)"
-              strokeWidth={2}
-              strokeLinecap="round"
-              vectorEffect="non-scaling-stroke"
-              pathLength={1}
-              style={{
-                strokeDasharray: 1,
-                strokeDashoffset: visible ? 0 : 1,
-                transition: "stroke-dashoffset 600ms ease-out",
-              }}
-            />
-          </svg>
+        <ol className="mt-12">
+          {etapas.map((e, i) => (
+            <li
+              key={e.titulo}
+              className="grid grid-cols-[4rem_1fr] gap-x-4 sm:grid-cols-[6rem_1fr]"
+            >
+              <div className="flex flex-col items-center">
+                {i === 3 && (
+                  <svg
+                    viewBox="0 0 120 90"
+                    className="h-[90px] w-[120px] shrink-0"
+                    fill="none"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <path
+                      d="M60 0 V 22 C 60 56, 26 52, 28 30 C 30 12, 60 20, 60 54 V 90"
+                      stroke="var(--color-ambar-escuro)"
+                      strokeWidth={2}
+                      strokeLinecap="round"
+                      pathLength={1}
+                      style={{
+                        strokeDasharray: 1,
+                        strokeDashoffset: reduced ? 0 : drawn ? 0 : 1,
+                        transition: reduced ? "none" : "stroke-dashoffset 600ms ease-out",
+                      }}
+                    />
+                    <text
+                      x={40}
+                      y={72}
+                      textAnchor="middle"
+                      fill="var(--color-tinta)"
+                      fontSize={8}
+                      letterSpacing={1}
+                      style={{ fontFamily: "var(--font-mono)", textTransform: "uppercase" }}
+                    >
+                      RECAÍDA
+                    </text>
+                  </svg>
+                )}
+                <div
+                  aria-hidden="true"
+                  className="w-[2px] flex-1 origin-top rounded-full bg-ambar-escuro"
+                  style={lineStyle}
+                />
+              </div>
 
-          <p
-            className="absolute left-0 top-[64%] w-16 text-center text-[0.625rem] uppercase tracking-[0.18em] text-tinta sm:w-24"
-            style={{ fontFamily: "var(--font-mono)" }}
-          >
-            recaída
-          </p>
-
-          <ol className="space-y-16">
-            {etapas.map((e, i) => (
-              <li key={e.titulo} className={i === 3 ? "pt-16" : undefined}>
+              <div className={`${i === 3 ? "pt-[90px]" : ""} ${i === 3 ? "pb-0" : "pb-16"}`}>
                 <p
                   className="text-[0.6875rem] uppercase tracking-[0.22em] text-tinta/70"
                   style={{ fontFamily: "var(--font-mono)" }}
@@ -75,10 +113,10 @@ export function ComoFunciona() {
                   {e.titulo}
                 </h3>
                 <p className="mt-3 max-w-[52ch] text-tinta/80">{e.texto}</p>
-              </li>
-            ))}
-          </ol>
-        </div>
+              </div>
+            </li>
+          ))}
+        </ol>
 
         <p
           className="mt-16 max-w-[34ch] text-[1.5rem] font-semibold text-tinta md:text-[2rem]"
