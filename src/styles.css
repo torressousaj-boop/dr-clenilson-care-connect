@@ -137,6 +137,9 @@
 /* Kicker sobre fundo claro (areia) — mesmo matiz, tom escuro para AA */
 @utility kicker-claro {
   color: var(--color-ambar-escuro);
+}
+
+
 
 @utility reveal {
   opacity: 0;
