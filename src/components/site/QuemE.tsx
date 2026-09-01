@@ -13,12 +13,13 @@ export function QuemE() {
       >
         <img
           src={sobreImg}
-          alt="Dr. Clenilson Júnior sentado à mesa do consultório, de terno"
-          width={1200}
-          height={1200}
+          alt="Dr. Clenilson Júnior de terno escuro, sentado à mesa do consultório durante um atendimento"
+          width={1600}
+          height={2400}
           loading="lazy"
-          className="w-full rounded-2xl object-cover"
+          className="w-full rounded-xl object-cover md:max-h-[560px]"
         />
+
 
         <div>
           <p className="kicker">Quem é o Dr. Clenilson</p>
