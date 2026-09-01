@@ -43,12 +43,18 @@ export function ComoFunciona() {
   const reduced = usePrefersReducedMotion();
   const drawn = reduced || visible;
 
-  const lineStyle = reduced
-    ? { transform: "scaleY(1)", transition: "none" }
-    : {
-        transform: drawn ? "scaleY(1)" : "scaleY(0)",
-        transition: "transform 600ms ease-out",
-      };
+  const SEG_DURACAO = 600;
+  const LACO_DELAY = 2 * 160 + SEG_DURACAO; // começa após o segmento anterior terminar
+  const atrasos = [0, 160, 320, LACO_DELAY + SEG_DURACAO];
+
+  const lineStyle = (i: number) =>
+    reduced
+      ? { transform: "scaleY(1)", transition: "none", transitionDelay: "0ms" }
+      : {
+          transform: drawn ? "scaleY(1)" : "scaleY(0)",
+          transition: `transform ${SEG_DURACAO}ms ease-out`,
+          transitionDelay: `${atrasos[i]}ms`,
+        };
 
   return (
     <section className="bg-areia py-24 text-tinta md:py-32">
@@ -64,14 +70,15 @@ export function ComoFunciona() {
               <div className="flex flex-col items-center">
                 {i === 3 && (
                   <svg
-                    viewBox="0 0 120 90"
-                    className="h-[90px] w-[120px] shrink-0"
+                    viewBox="0 0 64 110"
+                    preserveAspectRatio="xMidYMid meet"
+                    className="h-[110px] w-full shrink-0"
                     fill="none"
                     aria-hidden="true"
                     focusable="false"
                   >
                     <path
-                      d="M60 0 V 22 C 60 56, 26 52, 28 30 C 30 12, 60 20, 60 54 V 90"
+                      d="M32 0 V 20 C 32 46, 8 44, 10 28 C 12 14, 32 20, 32 46 V 78"
                       stroke="var(--color-ambar-escuro)"
                       strokeWidth={2}
                       strokeLinecap="round"
@@ -79,17 +86,20 @@ export function ComoFunciona() {
                       style={{
                         strokeDasharray: 1,
                         strokeDashoffset: reduced ? 0 : drawn ? 0 : 1,
-                        transition: reduced ? "none" : "stroke-dashoffset 600ms ease-out",
+                        transition: reduced
+                          ? "none"
+                          : `stroke-dashoffset ${SEG_DURACAO}ms ease-out`,
+                        transitionDelay: reduced ? "0ms" : `${LACO_DELAY}ms`,
                       }}
                     />
                     <text
-                      x={40}
-                      y={72}
+                      x={32}
+                      y={96}
                       textAnchor="middle"
                       fill="var(--color-tinta)"
-                      fontSize={8}
-                      letterSpacing={1}
-                      style={{ fontFamily: "var(--font-mono)", textTransform: "uppercase" }}
+                      fontSize={7}
+                      letterSpacing={0.8}
+                      style={{ fontFamily: "var(--font-mono)" }}
                     >
                       RECAÍDA
                     </text>
@@ -98,11 +108,12 @@ export function ComoFunciona() {
                 <div
                   aria-hidden="true"
                   className="w-[2px] flex-1 origin-top rounded-full bg-ambar-escuro"
-                  style={lineStyle}
+                  style={lineStyle(i)}
                 />
               </div>
 
-              <div className={`${i === 3 ? "pt-[90px]" : ""} ${i === 3 ? "pb-0" : "pb-16"}`}>
+              <div className={`${i === 3 ? "pt-[110px]" : ""} ${i === 3 ? "pb-0" : "pb-16"}`}>
+
                 <p
                   className="text-[0.6875rem] uppercase tracking-[0.22em] text-tinta/70"
                   style={{ fontFamily: "var(--font-mono)" }}
