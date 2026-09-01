@@ -1,4 +1,4 @@
-import heroImg from "@/assets/hero-clenilson.png";
+import heroImg from "@/assets/hero-clenilson-recorte.png";
 import { CRM, CIDADE } from "@/lib/site";
 import { CtaButton } from "./CtaButton";
 
@@ -34,8 +34,8 @@ export function Hero() {
           <img
             src={heroImg}
             alt="Dr. Clenilson Júnior, de camisa branca, braços relaxados e sorriso leve, olhando para quem chega"
-            width={1200}
-            height={1470}
+            width={876}
+            height={1079}
             className="w-[80%] max-w-[440px] select-none object-contain object-bottom md:w-full md:max-w-none"
           />
         </div>
