@@ -43,6 +43,8 @@
   --color-ameixa-claro: var(--ameixa-claro);
   --color-areia: var(--areia);
   --color-ambar: var(--ambar);
+  --color-ambar-escuro: var(--ambar-escuro);
+  --color-ambar-hover: var(--ambar-hover);
   --color-tinta: var(--tinta);
   --color-musgo: var(--musgo);
 
@@ -58,6 +60,8 @@
   --ameixa-claro: oklch(0.359 0.055 320.5);
   --areia: oklch(0.905 0.019 85.9);
   --ambar: oklch(0.685 0.135 62.5);
+  --ambar-escuro: oklch(0.48 0.12 62.5);
+  --ambar-hover: oklch(0.615 0.132 62.5);
   --tinta: oklch(0.213 0.026 325.4);
   --musgo: oklch(0.518 0.036 128.5);
 
