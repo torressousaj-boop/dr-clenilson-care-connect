@@ -40,7 +40,7 @@ export function ComoFunciona() {
             focusable="false"
           >
             <path
-              d="M56 16 V 430 C 56 476, 20 476, 20 442 C 20 408, 56 414, 56 458 V 704"
+              d="M56 16 V 496 C 56 542, 20 542, 20 508 C 20 474, 56 480, 56 524 V 704"
               fill="none"
               stroke="var(--color-ambar)"
               strokeWidth={2}
@@ -56,7 +56,7 @@ export function ComoFunciona() {
           </svg>
 
           <p
-            className="absolute left-0 top-[57%] w-16 text-center text-[0.625rem] uppercase tracking-[0.18em] text-tinta sm:w-24"
+            className="absolute left-0 top-[64%] w-16 text-center text-[0.625rem] uppercase tracking-[0.18em] text-tinta sm:w-24"
             style={{ fontFamily: "var(--font-mono)" }}
           >
             recaída
