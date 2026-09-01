@@ -33,12 +33,13 @@ export function Hero() {
         <div className="relative flex items-end justify-center md:justify-end">
           <img
             src={heroImg}
-            alt="Dr. Clenilson Júnior, médico psiquiatra, de camisa branca"
-            width={1024}
-            height={1280}
-            className="w-[78%] max-w-[420px] select-none object-contain object-bottom md:w-full"
+            alt="Dr. Clenilson Júnior, de camisa branca, braços relaxados e sorriso leve, olhando para quem chega"
+            width={1200}
+            height={1470}
+            className="w-[80%] max-w-[440px] select-none object-contain object-bottom md:w-full md:max-w-none"
           />
         </div>
+
       </div>
     </section>
   );
