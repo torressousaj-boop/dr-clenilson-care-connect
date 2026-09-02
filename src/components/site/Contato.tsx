@@ -1,3 +1,4 @@
+import consultorioImg from "@/assets/consultorio-clenilson.jpg.asset.json";
 import { CtaButton } from "./CtaButton";
 
 export function Contato() {
@@ -23,11 +24,7 @@ export function Contato() {
 
             <div>
               <dt className="caps text-[11px] text-branco/80">Horários</dt>
-              <dd className="mt-2 text-branco/80">
-                Segunda a sexta, 08h às 18h
-                <br />
-                Sábado, 08h às 12h
-              </dd>
+              <dd className="mt-2 text-branco/80">[PREENCHER HORÁRIOS]</dd>
             </div>
           </dl>
 
@@ -38,15 +35,20 @@ export function Contato() {
           </div>
         </div>
 
-        <div className="overflow-hidden rounded-2xl border border-branco/15">
-          <iframe
-            title="Mapa da localização do consultório do Dr. Clenilson Júnior"
-            src="https://www.google.com/maps?q=S%C3%A3o%20Lu%C3%ADs%20MA&output=embed"
+        <div className="space-y-6">
+          <img
+            src={consultorioImg.url}
+            alt="Dr. Clenilson Júnior na entrada do consultório, ao lado da placa Consultório 01"
             loading="lazy"
-            className="h-[360px] w-full md:h-full md:min-h-[420px]"
-            referrerPolicy="no-referrer-when-downgrade"
+            className="w-full rounded-xl object-cover"
+            style={{ aspectRatio: "3 / 2", objectPosition: "50% 30%" }}
           />
+
+          <div className="flex h-[220px] items-center justify-center rounded-xl border border-branco/15 bg-verde-claro px-6 text-center text-branco/70">
+            [MAPA — PREENCHER ENDEREÇO]
+          </div>
         </div>
+
       </div>
     </section>
   );
