@@ -78,13 +78,13 @@
   --secondary: var(--azul);
   --secondary-foreground: var(--branco);
   --muted: var(--azul);
-  --muted-foreground: oklch(from var(--creme) l c h / 80%);
+  --muted-foreground: rgb(247 241 230 / 80%);
   --accent: var(--azul-claro);
   --accent-foreground: var(--tinta);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: var(--branco);
-  --border: oklch(from var(--creme) l c h / 18%);
-  --input: oklch(from var(--creme) l c h / 24%);
+  --border: rgb(247 241 230 / 18%);
+  --input: rgb(247 241 230 / 24%);
   --ring: var(--azul-claro);
 }
 
@@ -99,8 +99,8 @@
   }
 
   body {
-    background-color: var(--color-ameixa);
-    color: var(--color-areia);
+    background-color: var(--color-azul-profundo);
+    color: var(--color-creme);
     font-family: var(--font-body);
     font-size: 17px;
     line-height: 1.6;
@@ -122,7 +122,7 @@
   }
 
   :focus-visible {
-    outline: 2px solid var(--color-ambar);
+    outline: 2px solid var(--color-azul-claro);
     outline-offset: 3px;
   }
 }
@@ -134,12 +134,12 @@
   font-weight: 500;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--color-ambar);
+  color: var(--color-azul-claro);
 }
 
 /* Kicker sobre fundo claro (areia) — mesmo matiz, tom escuro para AA */
 @utility kicker-claro {
-  color: var(--color-ambar-escuro);
+  color: var(--color-azul);
 }
 
 
