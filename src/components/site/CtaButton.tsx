@@ -22,7 +22,7 @@ export function CtaButton({
   } as const;
 
   const variants = {
-    verde: "bg-verde text-branco hover:bg-[#14282400]/0 hover:bg-tinta",
+    verde: "bg-verde text-branco hover:bg-tinta",
     branco: "bg-branco text-verde hover:bg-[#EFE9E0]",
   } as const;
 
