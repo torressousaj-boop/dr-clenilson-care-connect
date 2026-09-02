@@ -7,6 +7,10 @@ export function Tratamentos() {
     <section className="bg-azul-profundo py-24 md:py-32">
       <div ref={ref} data-visible={visible} className="reveal mx-auto max-w-6xl px-6">
         <p className="kicker">O que eu trato</p>
+        <p className="mt-4 max-w-[52ch] text-azul-claro">
+          Consulta, diagnóstico, medicação quando necessária e acompanhamento.
+        </p>
+
 
         <div className="mt-12 grid gap-4 md:grid-cols-2">
           <article className="rounded-2xl bg-azul px-8 py-12 md:py-16">
