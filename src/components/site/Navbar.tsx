@@ -14,17 +14,17 @@ export function Navbar() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-colors duration-200 ease-out ${
-        scrolled ? "bg-ameixa shadow-[0_1px_0_0_rgba(232,225,214,0.14)]" : "bg-transparent"
+      className={`fixed inset-x-0 top-0 z-50 bg-branco transition-shadow duration-200 ease-out ${
+        scrolled ? "shadow-[0_1px_0_0_rgba(20,33,29,0.10)]" : ""
       }`}
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-4">
         <a
           href="#topo"
-          className="inline-flex items-center gap-3 text-[1.0625rem] font-semibold tracking-tight text-areia"
+          className="inline-flex items-center gap-3 text-[19px] font-semibold tracking-tight text-verde"
           style={{ fontFamily: "var(--font-display)" }}
         >
-          <LogoSimbolo className="h-7 w-7 shrink-0" />
+          <LogoSimbolo className="h-[30px] w-[30px] shrink-0" />
           Dr. Clenilson Júnior
         </a>
         <CtaButton size="sm" showIcon={false}>
