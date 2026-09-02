@@ -4,29 +4,35 @@ import { CtaButton } from "./CtaButton";
 
 export function Hero() {
   return (
-    <section id="topo" className="relative overflow-hidden bg-ameixa pt-32 md:pt-40">
+    <section id="topo" className="relative overflow-hidden bg-azul-profundo pt-32 md:pt-40">
       <div className="mx-auto grid max-w-6xl grid-cols-1 items-end gap-12 px-6 md:grid-cols-[55%_45%] md:gap-8">
         <div className="pb-16 md:pb-24">
-          <p className="kicker">Psiquiatria</p>
+          <p className="kicker">Psiquiatria · Atendimento particular · {CIDADE}</p>
 
-          <h1 className="mt-6 max-w-[15ch] text-[2.5rem] font-semibold text-areia md:text-[3.75rem] [line-height:1.05]">
-            Quando a família chega aqui, já tentou de tudo.
+          <h1 className="mt-6 max-w-[15ch] text-[2.5rem] font-semibold text-creme md:text-[3.75rem] [line-height:1.05]">
+            Ansiedade, depressão e dependência{" "}
+            <em className="italic text-ciano">têm tratamento.</em>
           </h1>
 
-          <p className="mt-6 max-w-[52ch] text-areia/80">
-            Atendimento psiquiátrico para transtornos de personalidade, dependência química e
-            alcoolismo. Um plano que aguenta recaída, porque recaída faz parte.
+          <p className="mt-6 max-w-[52ch] text-creme/80">
+            Consulta psiquiátrica particular para transtornos de personalidade, dependência química,
+            alcoolismo, depressão e ansiedade. Avaliação, diagnóstico e plano de acompanhamento, com
+            retorno marcado.
           </p>
 
           <div className="mt-8">
-            <CtaButton size="lg">Falar com o consultório</CtaButton>
+            <CtaButton size="lg">Agendar pelo WhatsApp</CtaButton>
           </div>
 
+          <p className="mt-4 max-w-[52ch] text-[0.9rem] text-azul-claro/70">
+            Atendimento particular · Presencial e telemedicina · A família pode vir sozinha
+          </p>
+
           <p
-            className="mt-6 text-[0.75rem] uppercase tracking-[0.14em] text-areia/80"
+            className="mt-6 text-[0.75rem] uppercase tracking-[0.14em] text-creme/80"
             style={{ fontFamily: "var(--font-mono)" }}
           >
-            Dr. Clenilson Júnior · {CRM} · {CIDADE}
+            Dr. Clenilson Júnior · Médico · {CRM} · {CIDADE}
           </p>
         </div>
 

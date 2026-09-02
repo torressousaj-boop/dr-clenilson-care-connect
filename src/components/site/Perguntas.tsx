@@ -27,7 +27,7 @@ export function Perguntas() {
   const [aberta, setAberta] = useState<number | null>(0);
 
   return (
-    <section className="bg-areia py-24 text-tinta md:py-32">
+    <section className="bg-creme py-24 text-tinta md:py-32">
       <div className="mx-auto max-w-3xl px-6">
         <p className="kicker kicker-claro">Perguntas que a família faz</p>
 
@@ -49,7 +49,7 @@ export function Perguntas() {
                     {item.q}
                     <span
                       aria-hidden="true"
-                      className="shrink-0 text-ambar transition-transform duration-200 ease-out"
+                      className="shrink-0 text-azul-claro transition-transform duration-200 ease-out"
                       style={{ transform: open ? "rotate(45deg)" : "none" }}
                     >
                       +

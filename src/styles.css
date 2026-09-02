@@ -6,7 +6,7 @@
 
 /*
  * Design system — Dr. Clenilson Júnior
- * Paleta fixa: ameixa, ameixa-claro, areia, ambar, tinta, musgo.
+ * Paleta fixa: azul-profundo, azul, azul-claro, ciano, creme, branco, tinta, azul-texto.
  * Ambar é o único acento.
  */
 
@@ -39,14 +39,15 @@
   --color-ring: var(--ring);
 
   /* tokens de marca */
-  --color-ameixa: var(--ameixa);
-  --color-ameixa-claro: var(--ameixa-claro);
-  --color-areia: var(--areia);
-  --color-ambar: var(--ambar);
-  --color-ambar-escuro: var(--ambar-escuro);
-  --color-ambar-hover: var(--ambar-hover);
+  --color-azul-profundo: var(--azul-profundo);
+  --color-azul: var(--azul);
+  --color-azul-hover: var(--azul-hover);
+  --color-azul-claro: var(--azul-claro);
+  --color-ciano: var(--ciano);
+  --color-creme: var(--creme);
+  --color-branco: var(--branco);
   --color-tinta: var(--tinta);
-  --color-musgo: var(--musgo);
+  --color-azul-texto: var(--azul-texto);
 
   --font-display: "Bricolage Grotesque", system-ui, sans-serif;
   --font-body: "Newsreader", Georgia, serif;
@@ -56,35 +57,37 @@
 :root {
   --radius: 0.75rem;
 
-  --ameixa: oklch(0.242 0.036 328.2);
-  --ameixa-claro: oklch(0.359 0.055 320.5);
-  --areia: oklch(0.905 0.019 85.9);
-  --ambar: oklch(0.685 0.135 62.5);
-  --ambar-escuro: oklch(0.48 0.12 62.5);
-  --ambar-hover: oklch(0.615 0.132 62.5);
-  --tinta: oklch(0.213 0.026 325.4);
-  --musgo: oklch(0.518 0.036 128.5);
+  --azul-profundo: #071e33;
+  --azul: #0a6295;
+  --azul-hover: #084d76;
+  --azul-claro: #8ccff6;
+  --ciano: #54d1e3;
+  --creme: #f7f1e6;
+  --branco: #ffffff;
+  --tinta: #0d2137;
+  --azul-texto: #4a6fa5;
 
-  --background: var(--ameixa);
-  --foreground: var(--areia);
-  --card: var(--ameixa-claro);
-  --card-foreground: var(--areia);
-  --popover: var(--ameixa-claro);
-  --popover-foreground: var(--areia);
-  --primary: var(--ambar);
-  --primary-foreground: var(--tinta);
-  --secondary: var(--ameixa-claro);
-  --secondary-foreground: var(--areia);
-  --muted: var(--ameixa-claro);
-  --muted-foreground: oklch(0.905 0.019 85.9 / 80%);
-  --accent: var(--ambar);
+  --background: var(--azul-profundo);
+  --foreground: var(--creme);
+  --card: var(--azul);
+  --card-foreground: var(--branco);
+  --popover: var(--azul);
+  --popover-foreground: var(--branco);
+  --primary: var(--azul);
+  --primary-foreground: var(--branco);
+  --secondary: var(--azul);
+  --secondary-foreground: var(--branco);
+  --muted: var(--azul);
+  --muted-foreground: rgb(247 241 230 / 80%);
+  --accent: var(--azul-claro);
   --accent-foreground: var(--tinta);
   --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: var(--areia);
-  --border: oklch(0.905 0.019 85.9 / 18%);
-  --input: oklch(0.905 0.019 85.9 / 24%);
-  --ring: var(--ambar);
+  --destructive-foreground: var(--branco);
+  --border: rgb(247 241 230 / 18%);
+  --input: rgb(247 241 230 / 24%);
+  --ring: var(--azul-claro);
 }
+
 
 @layer base {
   * {
@@ -96,8 +99,8 @@
   }
 
   body {
-    background-color: var(--color-ameixa);
-    color: var(--color-areia);
+    background-color: var(--color-azul-profundo);
+    color: var(--color-creme);
     font-family: var(--font-body);
     font-size: 17px;
     line-height: 1.6;
@@ -119,7 +122,7 @@
   }
 
   :focus-visible {
-    outline: 2px solid var(--color-ambar);
+    outline: 2px solid var(--color-azul-claro);
     outline-offset: 3px;
   }
 }
@@ -131,12 +134,12 @@
   font-weight: 500;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--color-ambar);
+  color: var(--color-azul-claro);
 }
 
-/* Kicker sobre fundo claro (areia) — mesmo matiz, tom escuro para AA */
+/* Kicker sobre fundo claro (creme) — azul com contraste AA */
 @utility kicker-claro {
-  color: var(--color-ambar-escuro);
+  color: var(--color-azul);
 }
 
 

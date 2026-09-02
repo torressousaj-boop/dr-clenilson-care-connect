@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
+import { Brain } from "lucide-react";
 import { CtaButton } from "./CtaButton";
-import { LogoSimbolo } from "./Logo";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -15,20 +15,27 @@ export function Navbar() {
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-colors duration-200 ease-out ${
-        scrolled ? "bg-ameixa shadow-[0_1px_0_0_rgba(232,225,214,0.14)]" : "bg-transparent"
+        scrolled ? "bg-azul-profundo shadow-[0_1px_0_0_rgba(247,241,230,0.14)]" : "bg-transparent"
       }`}
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-4">
         <a
           href="#topo"
-          className="inline-flex items-center gap-3 text-[1.0625rem] font-semibold tracking-tight text-areia"
+          className="inline-flex items-center gap-3 text-[1.0625rem] font-semibold tracking-tight text-creme"
           style={{ fontFamily: "var(--font-display)" }}
         >
-          <LogoSimbolo className="h-7 w-7 shrink-0" />
+          <Brain
+            size={26}
+            aria-hidden="true"
+            className={`shrink-0 transition-colors duration-200 ease-out ${
+              scrolled ? "text-azul" : "text-azul-claro"
+            }`}
+
+          />
           Dr. Clenilson Júnior
         </a>
         <CtaButton size="sm" showIcon={false}>
-          Falar com o consultório
+          Agendar pelo WhatsApp
         </CtaButton>
       </nav>
     </header>

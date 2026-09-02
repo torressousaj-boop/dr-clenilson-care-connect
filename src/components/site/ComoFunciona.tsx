@@ -57,9 +57,9 @@ export function ComoFunciona() {
         };
 
   return (
-    <section className="bg-areia py-24 text-tinta md:py-32">
+    <section className="bg-creme py-24 text-tinta md:py-32">
       <div ref={ref} data-visible={visible} className="reveal mx-auto max-w-6xl px-6">
-        <p className="kicker kicker-claro">Como funciona</p>
+        <p className="kicker kicker-claro">Como funciona a consulta</p>
 
         <ol className="mt-12">
           {etapas.map((e, i) => (
@@ -79,7 +79,7 @@ export function ComoFunciona() {
                   >
                     <path
                       d="M32 0 V 20 C 32 46, 8 44, 10 28 C 12 14, 32 20, 32 46 V 78"
-                      stroke="var(--color-ambar-escuro)"
+                      stroke="var(--color-azul)"
                       strokeWidth={2}
                       strokeLinecap="round"
                       pathLength={1}
@@ -107,7 +107,7 @@ export function ComoFunciona() {
                 )}
                 <div
                   aria-hidden="true"
-                  className="w-[2px] flex-1 origin-top rounded-full bg-ambar-escuro"
+                  className="w-[2px] flex-1 origin-top rounded-full bg-azul"
                   style={lineStyle(i)}
                 />
               </div>
