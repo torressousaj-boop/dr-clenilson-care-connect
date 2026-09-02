@@ -27,9 +27,9 @@ export function Perguntas() {
   const [aberta, setAberta] = useState<number | null>(0);
 
   return (
-    <section className="bg-branco py-24 text-tinta md:py-32">
+    <section className="bg-areia py-24 text-tinta md:py-32">
       <div className="mx-auto max-w-3xl px-6">
-        <p className="kicker">Perguntas que a família faz</p>
+        <p className="kicker kicker-claro">Perguntas que a família faz</p>
 
         <div className="mt-12 divide-y divide-tinta/15 border-y border-tinta/15">
           {perguntas.map((item, i) => {
@@ -43,13 +43,13 @@ export function Perguntas() {
                     aria-controls={`faq-panel-${i}`}
                     id={`faq-button-${i}`}
                     onClick={() => setAberta(open ? null : i)}
-                    className="flex w-full items-center justify-between gap-6 py-6 text-left text-[1.125rem] font-semibold text-verde md:text-[1.25rem]"
+                    className="flex w-full items-center justify-between gap-6 py-6 text-left text-[1.125rem] font-semibold text-tinta md:text-[1.25rem]"
                     style={{ fontFamily: "var(--font-display)" }}
                   >
                     {item.q}
                     <span
                       aria-hidden="true"
-                      className="shrink-0 text-cobre-escuro transition-transform duration-200 ease-out"
+                      className="shrink-0 text-ambar transition-transform duration-200 ease-out"
                       style={{ transform: open ? "rotate(45deg)" : "none" }}
                     >
                       +
@@ -61,7 +61,7 @@ export function Perguntas() {
                   role="region"
                   aria-labelledby={`faq-button-${i}`}
                   hidden={!open}
-                  className="pb-6 text-cinza"
+                  className="pb-6 text-tinta/80"
                 >
                   {item.a}
                 </div>

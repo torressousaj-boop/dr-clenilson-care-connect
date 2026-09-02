@@ -57,9 +57,9 @@ export function ComoFunciona() {
         };
 
   return (
-    <section className="bg-branco py-24 text-tinta md:py-32">
+    <section className="bg-areia py-24 text-tinta md:py-32">
       <div ref={ref} data-visible={visible} className="reveal mx-auto max-w-6xl px-6">
-        <p className="kicker">Como funciona</p>
+        <p className="kicker kicker-claro">Como funciona</p>
 
         <ol className="mt-12">
           {etapas.map((e, i) => (
@@ -79,7 +79,7 @@ export function ComoFunciona() {
                   >
                     <path
                       d="M32 0 V 20 C 32 46, 8 44, 10 28 C 12 14, 32 20, 32 46 V 78"
-                      stroke="var(--color-cobre)"
+                      stroke="var(--color-ambar-escuro)"
                       strokeWidth={2}
                       strokeLinecap="round"
                       pathLength={1}
@@ -96,10 +96,10 @@ export function ComoFunciona() {
                       x={32}
                       y={96}
                       textAnchor="middle"
-                      fill="var(--color-cinza)"
+                      fill="var(--color-tinta)"
                       fontSize={7}
                       letterSpacing={0.8}
-                      style={{ fontFamily: "var(--font-body)", fontWeight: 600 }}
+                      style={{ fontFamily: "var(--font-mono)" }}
                     >
                       RECAÍDA
                     </text>
@@ -107,7 +107,7 @@ export function ComoFunciona() {
                 )}
                 <div
                   aria-hidden="true"
-                  className="w-[2px] flex-1 origin-top rounded-full bg-cobre"
+                  className="w-[2px] flex-1 origin-top rounded-full bg-ambar-escuro"
                   style={lineStyle(i)}
                 />
               </div>
@@ -115,22 +115,22 @@ export function ComoFunciona() {
               <div className={`${i === 3 ? "pt-[110px]" : ""} ${i === 3 ? "pb-0" : "pb-16"}`}>
 
                 <p
-                  className="text-[11px] uppercase tracking-[0.18em] text-cinza"
-                  style={{ fontFamily: "var(--font-body)", fontWeight: 600 }}
+                  className="text-[0.6875rem] uppercase tracking-[0.22em] text-tinta/70"
+                  style={{ fontFamily: "var(--font-mono)" }}
                 >
                   Etapa {i + 1}
                 </p>
-                <h3 className="mt-2 text-[1.5rem] font-semibold text-verde md:text-[1.875rem]">
+                <h3 className="mt-2 text-[1.5rem] font-semibold text-tinta md:text-[1.875rem]">
                   {e.titulo}
                 </h3>
-                <p className="mt-3 max-w-[52ch] text-cinza">{e.texto}</p>
+                <p className="mt-3 max-w-[52ch] text-tinta/80">{e.texto}</p>
               </div>
             </li>
           ))}
         </ol>
 
         <p
-          className="mt-16 max-w-[34ch] text-[1.5rem] font-semibold text-verde md:text-[2rem]"
+          className="mt-16 max-w-[34ch] text-[1.5rem] font-semibold text-tinta md:text-[2rem]"
           style={{ fontFamily: "var(--font-display)" }}
         >
           A linha volta porque o tratamento aguenta. Recair não tira ninguém daqui.

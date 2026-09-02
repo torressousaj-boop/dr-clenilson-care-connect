@@ -31,7 +31,7 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
-    <div className="min-h-dvh bg-branco">
+    <div className="min-h-dvh bg-ameixa">
       <Navbar />
       <main>
         <Hero />
