@@ -107,7 +107,7 @@ export function ComoFunciona() {
                 )}
                 <div
                   aria-hidden="true"
-                  className="w-[2px] flex-1 origin-top rounded-full bg-azul-escuro"
+                  className="w-[2px] flex-1 origin-top rounded-full bg-azul"
                   style={lineStyle(i)}
                 />
               </div>
