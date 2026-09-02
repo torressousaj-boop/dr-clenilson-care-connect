@@ -30,7 +30,7 @@ export function Julgamentos() {
           className="mt-12 max-w-[28ch] text-[1.5rem] font-semibold text-tinta md:text-[2rem]"
           style={{ fontFamily: "var(--font-display)" }}
         >
-          Nenhuma dessas frases já tirou alguém de onde está.
+          Nada disso é falta de vontade. É quadro clínico, e quadro clínico tem tratamento.
         </p>
       </div>
     </section>

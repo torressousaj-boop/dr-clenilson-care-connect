@@ -42,7 +42,7 @@ export function Contato() {
           </dl>
 
           <div className="mt-10">
-            <CtaButton size="lg">Falar com o consultório</CtaButton>
+            <CtaButton size="lg">Agendar pelo WhatsApp</CtaButton>
           </div>
         </div>
 

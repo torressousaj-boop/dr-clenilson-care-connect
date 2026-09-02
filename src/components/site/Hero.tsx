@@ -11,7 +11,7 @@ export function Hero() {
 
           <h1 className="mt-6 max-w-[15ch] text-[2.5rem] font-semibold text-creme md:text-[3.75rem] [line-height:1.05]">
             Ansiedade, depressão e dependência{" "}
-            <em className="not-italic italic text-ciano">têm tratamento.</em>
+            <em className="italic text-ciano">têm tratamento.</em>
           </h1>
 
           <p className="mt-6 max-w-[52ch] text-creme/80">

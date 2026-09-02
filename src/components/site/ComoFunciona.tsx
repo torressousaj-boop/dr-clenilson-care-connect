@@ -59,7 +59,7 @@ export function ComoFunciona() {
   return (
     <section className="bg-creme py-24 text-tinta md:py-32">
       <div ref={ref} data-visible={visible} className="reveal mx-auto max-w-6xl px-6">
-        <p className="kicker kicker-claro">Como funciona</p>
+        <p className="kicker kicker-claro">Como funciona a consulta</p>
 
         <ol className="mt-12">
           {etapas.map((e, i) => (
