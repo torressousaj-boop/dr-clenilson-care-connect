@@ -5,7 +5,7 @@ export function QuemE() {
   const { ref, visible } = useReveal<HTMLDivElement>();
 
   return (
-    <section className="bg-ameixa-claro py-24 md:py-32">
+    <section className="bg-azul py-24 md:py-32">
       <div
         ref={ref}
         data-visible={visible}
@@ -24,11 +24,11 @@ export function QuemE() {
         <div>
           <p className="kicker">Quem é o Dr. Clenilson</p>
 
-          <h2 className="mt-6 text-[1.875rem] font-semibold text-areia md:text-[2.5rem]">
+          <h2 className="mt-6 text-[1.875rem] font-semibold text-creme md:text-[2.5rem]">
             Eu atendo famílias cansadas há muito tempo.
           </h2>
 
-          <div className="mt-6 space-y-5 text-areia/80">
+          <div className="mt-6 space-y-5 text-creme/80">
             <p>
               Sou médico psiquiatra. A maior parte das pessoas que me procura não é o paciente: é a
               mãe, a esposa, o irmão. Alguém que já ouviu muito conselho, já tentou clínica, já

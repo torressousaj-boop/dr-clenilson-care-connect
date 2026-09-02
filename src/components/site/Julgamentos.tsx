@@ -11,7 +11,7 @@ export function Julgamentos() {
   const { ref, visible } = useReveal<HTMLDivElement>();
 
   return (
-    <section className="bg-areia py-24 text-tinta md:py-32">
+    <section className="bg-creme py-24 text-tinta md:py-32">
       <div ref={ref} data-visible={visible} className="reveal mx-auto max-w-6xl px-6">
         <p className="kicker kicker-claro">O que você já deve ter ouvido</p>
 

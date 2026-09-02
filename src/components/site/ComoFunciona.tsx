@@ -57,7 +57,7 @@ export function ComoFunciona() {
         };
 
   return (
-    <section className="bg-areia py-24 text-tinta md:py-32">
+    <section className="bg-creme py-24 text-tinta md:py-32">
       <div ref={ref} data-visible={visible} className="reveal mx-auto max-w-6xl px-6">
         <p className="kicker kicker-claro">Como funciona</p>
 
@@ -107,7 +107,7 @@ export function ComoFunciona() {
                 )}
                 <div
                   aria-hidden="true"
-                  className="w-[2px] flex-1 origin-top rounded-full bg-ambar-escuro"
+                  className="w-[2px] flex-1 origin-top rounded-full bg-azul-escuro"
                   style={lineStyle(i)}
                 />
               </div>
