@@ -14,19 +14,18 @@ export function Hero() {
       {/* faixa verde de chão, por trás da foto */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-x-0 bottom-0 z-0 h-[150px] bg-verde"
+        className="pointer-events-none absolute inset-x-0 bottom-0 z-0 h-[90px] bg-verde md:h-[150px]"
       />
 
-      <div className="relative z-10 mx-auto grid max-w-6xl grid-cols-1 items-center gap-12 px-6 pb-24 md:grid-cols-2 md:gap-16 md:pb-32">
+      <div className="relative z-10 mx-auto grid max-w-6xl grid-cols-1 items-center gap-12 px-6 pb-32 md:grid-cols-2 md:gap-16 md:pb-32">
         <div className="relative">
           <img
             src={heroImg}
             alt="Dr. Clenilson Júnior, de camisa branca, braços relaxados e sorriso leve, olhando para quem chega"
             width={1200}
             height={1500}
-            className="w-full select-none"
+            className="w-full select-none rounded-xl"
             style={{
-              borderRadius: "14px",
               aspectRatio: "4 / 5",
               objectFit: "cover",
               objectPosition: "50% 18%",
@@ -34,6 +33,7 @@ export function Hero() {
             }}
           />
         </div>
+
 
         <div>
           <p className="kicker">Psiquiatria</p>
