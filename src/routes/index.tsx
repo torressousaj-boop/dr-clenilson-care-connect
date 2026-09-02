@@ -11,9 +11,9 @@ import { Contato } from "@/components/site/Contato";
 import { Rodape } from "@/components/site/Rodape";
 import { BotaoFlutuante } from "@/components/site/BotaoFlutuante";
 
-const title = "Dr. Clenilson Júnior — Psiquiatra | Borderline e Dependência";
+const title = "Dr. Clenilson Júnior — Médico | Psiquiatria em [CIDADE]";
 const description =
-  "Atendimento psiquiátrico para transtornos de personalidade, dependência química e alcoolismo. Um plano que aguenta recaída, porque recaída faz parte.";
+  "Consulta psiquiátrica particular para ansiedade, depressão, dependência química, alcoolismo e transtornos de personalidade. Avaliação, diagnóstico e acompanhamento.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
