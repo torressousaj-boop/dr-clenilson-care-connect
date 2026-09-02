@@ -49,7 +49,7 @@ export function Perguntas() {
                     {item.q}
                     <span
                       aria-hidden="true"
-                      className="shrink-0 text-azul-claro transition-transform duration-200 ease-out"
+                      className="shrink-0 text-azul transition-transform duration-200 ease-out"
                       style={{ transform: open ? "rotate(45deg)" : "none" }}
                     >
                       +
