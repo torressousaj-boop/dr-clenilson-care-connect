@@ -30,7 +30,7 @@ export function QuemE() {
 
           <div className="mt-6 space-y-5 text-creme/80">
             <p>
-              Sou médico psiquiatra. A maior parte das pessoas que me procura não é o paciente: é a
+              Sou médico, com atuação em psiquiatria. A maior parte das pessoas que me procura não é o paciente: é a
               mãe, a esposa, o irmão. Alguém que já ouviu muito conselho, já tentou clínica, já
               tentou igreja, já tentou brigar e já tentou ceder.
             </p>
