@@ -28,8 +28,9 @@ export function Navbar() {
             size={26}
             aria-hidden="true"
             className={`shrink-0 transition-colors duration-200 ease-out ${
-              scrolled ? "text-azul-claro" : "text-azul-claro"
+              scrolled ? "text-azul" : "text-azul-claro"
             }`}
+
           />
           Dr. Clenilson Júnior
         </a>
