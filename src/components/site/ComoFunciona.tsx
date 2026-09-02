@@ -79,7 +79,7 @@ export function ComoFunciona() {
                   >
                     <path
                       d="M32 0 V 20 C 32 46, 8 44, 10 28 C 12 14, 32 20, 32 46 V 78"
-                      stroke="var(--color-ambar-escuro)"
+                      stroke="var(--color-azul)"
                       strokeWidth={2}
                       strokeLinecap="round"
                       pathLength={1}
