@@ -11,15 +11,16 @@ export function Julgamentos() {
   const { ref, visible } = useReveal<HTMLDivElement>();
 
   return (
-    <section className="bg-areia py-24 text-tinta md:py-32">
+    <section className="bg-verde py-24 text-branco md:py-32">
       <div ref={ref} data-visible={visible} className="reveal mx-auto max-w-6xl px-6">
-        <p className="kicker kicker-claro">O que você já deve ter ouvido</p>
+        <p className="kicker kicker-escuro">O que você já deve ter ouvido</p>
 
         <div className="mt-12 grid gap-4 sm:grid-cols-2">
           {frases.map((f) => (
             <blockquote
               key={f}
-              className="rounded-xl bg-tinta/[0.05] px-8 py-10 text-[1.375rem] italic leading-snug text-tinta md:text-[1.625rem]"
+              className="rounded-xl bg-branco/[0.07] px-8 py-10 text-[1.375rem] italic leading-snug text-branco md:text-[1.625rem]"
+              style={{ fontFamily: "var(--font-display)" }}
             >
               “{f}”
             </blockquote>
@@ -27,7 +28,7 @@ export function Julgamentos() {
         </div>
 
         <p
-          className="mt-12 max-w-[28ch] text-[1.5rem] font-semibold text-tinta md:text-[2rem]"
+          className="mt-12 max-w-[28ch] text-[1.5rem] font-semibold text-branco md:text-[2rem]"
           style={{ fontFamily: "var(--font-display)" }}
         >
           Nenhuma dessas frases já tirou alguém de onde está.

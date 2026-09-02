@@ -6,8 +6,8 @@
 
 /*
  * Design system — Dr. Clenilson Júnior
- * Paleta fixa: ameixa, ameixa-claro, areia, ambar, tinta, musgo.
- * Ambar é o único acento.
+ * Paleta: verde, verde-claro, branco, cobre, cobre-escuro, tinta, cinza.
+ * Cobre é o único acento: gráfico e texto grande. Texto pequeno usa cobre-escuro.
  */
 
 @theme inline {
@@ -39,51 +39,48 @@
   --color-ring: var(--ring);
 
   /* tokens de marca */
-  --color-ameixa: var(--ameixa);
-  --color-ameixa-claro: var(--ameixa-claro);
-  --color-areia: var(--areia);
-  --color-ambar: var(--ambar);
-  --color-ambar-escuro: var(--ambar-escuro);
-  --color-ambar-hover: var(--ambar-hover);
+  --color-verde: var(--verde);
+  --color-verde-claro: var(--verde-claro);
+  --color-branco: var(--branco);
+  --color-cobre: var(--cobre);
+  --color-cobre-escuro: var(--cobre-escuro);
   --color-tinta: var(--tinta);
-  --color-musgo: var(--musgo);
+  --color-cinza: var(--cinza);
 
-  --font-display: "Bricolage Grotesque", system-ui, sans-serif;
-  --font-body: "Newsreader", Georgia, serif;
-  --font-mono: "Azeret Mono", ui-monospace, monospace;
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Inter", system-ui, sans-serif;
 }
 
 :root {
-  --radius: 0.75rem;
+  --radius: 0.875rem;
 
-  --ameixa: oklch(0.242 0.036 328.2);
-  --ameixa-claro: oklch(0.359 0.055 320.5);
-  --areia: oklch(0.905 0.019 85.9);
-  --ambar: oklch(0.685 0.135 62.5);
-  --ambar-escuro: oklch(0.48 0.12 62.5);
-  --ambar-hover: oklch(0.615 0.132 62.5);
-  --tinta: oklch(0.213 0.026 325.4);
-  --musgo: oklch(0.518 0.036 128.5);
+  --verde: #1e3a34;
+  --verde-claro: #2f5349;
+  --branco: #fbf8f3;
+  --cobre: #c97b4a;
+  --cobre-escuro: #9a5630;
+  --tinta: #14211d;
+  --cinza: #5a6b64;
 
-  --background: var(--ameixa);
-  --foreground: var(--areia);
-  --card: var(--ameixa-claro);
-  --card-foreground: var(--areia);
-  --popover: var(--ameixa-claro);
-  --popover-foreground: var(--areia);
-  --primary: var(--ambar);
-  --primary-foreground: var(--tinta);
-  --secondary: var(--ameixa-claro);
-  --secondary-foreground: var(--areia);
-  --muted: var(--ameixa-claro);
-  --muted-foreground: oklch(0.905 0.019 85.9 / 80%);
-  --accent: var(--ambar);
-  --accent-foreground: var(--tinta);
+  --background: var(--branco);
+  --foreground: var(--tinta);
+  --card: var(--branco);
+  --card-foreground: var(--tinta);
+  --popover: var(--branco);
+  --popover-foreground: var(--tinta);
+  --primary: var(--verde);
+  --primary-foreground: var(--branco);
+  --secondary: var(--verde-claro);
+  --secondary-foreground: var(--branco);
+  --muted: #eee9e1;
+  --muted-foreground: var(--cinza);
+  --accent: var(--cobre);
+  --accent-foreground: var(--branco);
   --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: var(--areia);
-  --border: oklch(0.905 0.019 85.9 / 18%);
-  --input: oklch(0.905 0.019 85.9 / 24%);
-  --ring: var(--ambar);
+  --destructive-foreground: var(--branco);
+  --border: rgb(20 33 29 / 12%);
+  --input: rgb(20 33 29 / 18%);
+  --ring: var(--verde);
 }
 
 @layer base {
@@ -96,8 +93,8 @@
   }
 
   body {
-    background-color: var(--color-ameixa);
-    color: var(--color-areia);
+    background-color: var(--color-branco);
+    color: var(--color-tinta);
     font-family: var(--font-body);
     font-size: 17px;
     line-height: 1.6;
@@ -115,31 +112,38 @@
   h3,
   h4 {
     font-family: var(--font-display);
+    font-weight: 600;
     line-height: 1.08;
   }
 
   :focus-visible {
-    outline: 2px solid var(--color-ambar);
+    outline: 2px solid var(--color-verde);
     outline-offset: 3px;
   }
 }
 
-/* Olho de seção / kicker */
+/* Olho de seção / kicker — fundo claro */
 @utility kicker {
-  font-family: var(--font-mono);
-  font-size: 0.6875rem;
-  font-weight: 500;
-  letter-spacing: 0.22em;
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--color-ambar);
+  color: var(--color-cobre-escuro);
 }
 
-/* Kicker sobre fundo claro (areia) — mesmo matiz, tom escuro para AA */
-@utility kicker-claro {
-  color: var(--color-ambar-escuro);
+/* Kicker sobre fundo verde */
+@utility kicker-escuro {
+  color: var(--color-cobre);
 }
 
-
+/* Texto pequeno em maiúsculas (credenciais, rodapé) */
+@utility caps {
+  font-family: var(--font-body);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+}
 
 @utility reveal {
   opacity: 0;
