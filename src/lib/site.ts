@@ -5,5 +5,5 @@ export const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURICo
   WHATSAPP_MESSAGE,
 )}`;
 
-export const CRM = "CRM-MA [PREENCHER]";
-export const CIDADE = "[CIDADE]";
+export const CRM = "CRM-MA 14933";
+export const CIDADE = "São Luís · MA";
