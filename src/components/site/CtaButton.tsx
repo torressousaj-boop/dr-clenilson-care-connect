@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { WHATSAPP_URL } from "@/lib/site";
+import { handleCTA } from "@/lib/site";
 import { WhatsAppIcon } from "./WhatsAppIcon";
 
 export function CtaButton({
@@ -20,14 +20,13 @@ export function CtaButton({
   } as const;
 
   return (
-    <a
-      href={WHATSAPP_URL}
-      target="_blank"
-      rel="noopener noreferrer"
-      className={`inline-flex items-center gap-3 rounded-full bg-verde font-medium text-branco transition-[transform,background-color] duration-200 ease-out hover:-translate-y-[2px] hover:bg-verde-hover ${sizes[size]} ${className}`}
+    <button
+      type="button"
+      onClick={handleCTA}
+      className={`inline-flex cursor-pointer items-center gap-3 rounded-full bg-verde font-medium text-branco transition-[transform,background-color] duration-200 ease-out hover:-translate-y-[2px] hover:bg-verde-hover ${sizes[size]} ${className}`}
     >
       {showIcon && <WhatsAppIcon className="h-5 w-5 shrink-0" />}
       {children}
-    </a>
+    </button>
   );
 }
