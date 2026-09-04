@@ -1,5 +1,5 @@
 import heroImg from "@/assets/hero-clenilson-recorte.png";
-import { CRM, CIDADE } from "@/lib/site";
+import { CRM } from "@/lib/site";
 import { CtaButton } from "./CtaButton";
 
 export function Hero() {
