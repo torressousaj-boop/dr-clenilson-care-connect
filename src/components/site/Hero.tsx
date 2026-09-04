@@ -22,10 +22,6 @@ export function Hero() {
             <CtaButton size="lg" className="cta-pulse font-semibold">Agendar pelo WhatsApp</CtaButton>
           </div>
 
-          <p className="mt-4 max-w-lg text-sm text-azul-claro/90">
-            Atendimento particular · Presencial e telemedicina · A família pode vir sozinha
-          </p>
-
           <p className="mt-6 text-sm text-creme/60">
             Dr. Clenilson Júnior, psiquiatra, {CRM}.
           </p>
