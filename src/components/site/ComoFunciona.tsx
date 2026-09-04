@@ -99,7 +99,7 @@ export function ComoFunciona() {
                       fill="var(--color-tinta)"
                       fontSize={7}
                       letterSpacing={0.8}
-                      style={{ fontFamily: "var(--font-mono)" }}
+                      style={{ fontFamily: "var(--font-body)" }}
                     >
                       RECAÍDA
                     </text>
@@ -114,10 +114,7 @@ export function ComoFunciona() {
 
               <div className={`${i === 3 ? "pt-[110px]" : ""} ${i === 3 ? "pb-0" : "pb-16"}`}>
 
-                <p
-                  className="text-[0.6875rem] uppercase tracking-[0.22em] text-tinta/70"
-                  style={{ fontFamily: "var(--font-mono)" }}
-                >
+                <p className="text-[0.6875rem] uppercase tracking-[0.22em] text-tinta/70">
                   Etapa {i + 1}
                 </p>
                 <h3 className="mt-2 text-[1.5rem] font-semibold text-tinta md:text-[1.875rem]">
@@ -129,10 +126,7 @@ export function ComoFunciona() {
           ))}
         </ol>
 
-        <p
-          className="mt-16 max-w-[34ch] text-[1.5rem] font-semibold text-tinta md:text-[2rem]"
-          style={{ fontFamily: "var(--font-display)" }}
-        >
+        <p className="mt-16 max-w-[34ch] font-display text-[1.5rem] font-semibold text-tinta md:text-[2rem]">
           A linha volta porque o tratamento aguenta. Recair não tira ninguém daqui.
         </p>
       </div>

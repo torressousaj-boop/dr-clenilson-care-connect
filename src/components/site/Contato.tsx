@@ -13,24 +13,18 @@ export function Contato() {
 
           <dl className="mt-10 space-y-8">
             <div>
-              <dt
-                className="text-[0.6875rem] uppercase tracking-[0.22em] text-creme/80"
-                style={{ fontFamily: "var(--font-mono)" }}
-              >
+              <dt className="text-[0.6875rem] uppercase tracking-[0.22em] text-creme/80">
                 Endereço
               </dt>
               <dd className="mt-2 text-creme/80">
                 [PREENCHER ENDEREÇO], [BAIRRO]
                 <br />
-                São Luís — MA
+                São Luís, MA
               </dd>
             </div>
 
             <div>
-              <dt
-                className="text-[0.6875rem] uppercase tracking-[0.22em] text-creme/80"
-                style={{ fontFamily: "var(--font-mono)" }}
-              >
+              <dt className="text-[0.6875rem] uppercase tracking-[0.22em] text-creme/80">
                 Horários
               </dt>
               <dd className="mt-2 text-creme/80">

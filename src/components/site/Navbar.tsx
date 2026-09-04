@@ -6,7 +6,7 @@ export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 24);
+    const onScroll = () => setScrolled(window.scrollY > 40);
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
@@ -14,15 +14,16 @@ export function Navbar() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-colors duration-200 ease-out ${
-        scrolled ? "bg-azul-profundo shadow-[0_1px_0_0_rgba(247,241,230,0.14)]" : "bg-transparent"
+      className={`fixed inset-x-0 top-0 z-50 border-b transition-[background-color,border-color,backdrop-filter] duration-300 ease-out ${
+        scrolled
+          ? "border-creme/10 bg-azul-profundo/90 backdrop-blur-md"
+          : "border-transparent bg-transparent"
       }`}
     >
-      <nav className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-4">
+      <nav className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-4 sm:px-6">
         <a
           href="#topo"
-          className="inline-flex items-center gap-3 text-[1.0625rem] font-semibold tracking-tight text-creme"
-          style={{ fontFamily: "var(--font-display)" }}
+          className="inline-flex min-w-0 items-center gap-2 font-display text-sm font-semibold text-creme sm:gap-3 sm:text-[1.0625rem]"
         >
           <Brain
             size={26}
@@ -32,9 +33,17 @@ export function Navbar() {
             }`}
 
           />
-          Dr. Clenilson Júnior
+          <span className="leading-tight">Dr. Clenilson Júnior</span>
         </a>
-        <CtaButton size="sm" showIcon={false}>
+
+        <div className="hidden items-center gap-6 md:flex">
+          <a className="text-sm text-creme/80 transition-colors duration-200 ease-out hover:text-creme" href="#sinais">Sinais de alerta</a>
+          <a className="text-sm text-creme/80 transition-colors duration-200 ease-out hover:text-creme" href="#sobre">Sobre o médico</a>
+          <a className="text-sm text-creme/80 transition-colors duration-200 ease-out hover:text-creme" href="#tratamentos">Tratamentos</a>
+          <a className="text-sm text-creme/80 transition-colors duration-200 ease-out hover:text-creme" href="#faq">Dúvidas</a>
+        </div>
+
+        <CtaButton size="sm" showIcon={false} className="shrink-0 px-4 text-sm">
           Agendar pelo WhatsApp
         </CtaButton>
       </nav>
