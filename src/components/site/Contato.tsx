@@ -22,7 +22,7 @@ export function Contato() {
               <dd className="mt-2 text-creme/80">
                 [PREENCHER ENDEREÇO], [BAIRRO]
                 <br />
-                [CIDADE] — MA
+                São Luís — MA
               </dd>
             </div>
 

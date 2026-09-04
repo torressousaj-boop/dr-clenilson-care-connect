@@ -11,7 +11,7 @@ import { Contato } from "@/components/site/Contato";
 import { Rodape } from "@/components/site/Rodape";
 import { BotaoFlutuante } from "@/components/site/BotaoFlutuante";
 
-const title = "Dr. Clenilson Júnior — Médico | Psiquiatria em [CIDADE]";
+const title = "Dr. Clenilson Júnior — Médico | Psiquiatria em São Luís";
 const description =
   "Consulta psiquiátrica particular para ansiedade, depressão, dependência química, alcoolismo e transtornos de personalidade. Avaliação, diagnóstico e acompanhamento.";
 
