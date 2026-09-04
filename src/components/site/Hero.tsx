@@ -1,4 +1,4 @@
-import heroAsset from "@/assets/hero-clenilson-terno.png.asset.json";
+import heroAsset from "@/assets/hero-clenilson-terno.png";
 import { CRM } from "@/lib/site";
 import { CtaButton } from "./CtaButton";
 
