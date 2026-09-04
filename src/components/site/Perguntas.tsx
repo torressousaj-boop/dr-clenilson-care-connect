@@ -27,7 +27,7 @@ export function Perguntas() {
   const [aberta, setAberta] = useState<number | null>(0);
 
   return (
-    <section className="bg-creme py-24 text-tinta md:py-32">
+    <section id="faq" className="scroll-mt-20 bg-creme py-24 text-tinta md:py-32">
       <div className="mx-auto max-w-3xl px-6">
         <p className="kicker kicker-claro">Perguntas que a família faz</p>
 
@@ -44,7 +44,6 @@ export function Perguntas() {
                     id={`faq-button-${i}`}
                     onClick={() => setAberta(open ? null : i)}
                     className="flex w-full items-center justify-between gap-6 py-6 text-left text-[1.125rem] font-semibold text-tinta md:text-[1.25rem]"
-                    style={{ fontFamily: "var(--font-display)" }}
                   >
                     {item.q}
                     <span

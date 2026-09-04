@@ -5,7 +5,7 @@ export function QuemE() {
   const { ref, visible } = useReveal<HTMLDivElement>();
 
   return (
-    <section className="bg-azul py-24 md:py-32">
+    <section id="sobre" className="scroll-mt-20 bg-azul py-24 md:py-32">
       <div
         ref={ref}
         data-visible={visible}
@@ -40,7 +40,7 @@ export function QuemE() {
               fazer no dia ruim.
             </p>
             <p>
-              Não prometo linha reta. Prometo continuar aqui quando a linha voltar — e ela costuma
+              Não prometo linha reta. Prometo continuar aqui quando a linha voltar, e ela costuma
               voltar pelo menos uma vez.
             </p>
           </div>

@@ -4,7 +4,7 @@ export function Tratamentos() {
   const { ref, visible } = useReveal<HTMLDivElement>();
 
   return (
-    <section className="bg-azul-profundo py-24 md:py-32">
+    <section id="tratamentos" className="scroll-mt-20 bg-azul-profundo py-24 md:py-32">
       <div ref={ref} data-visible={visible} className="reveal mx-auto max-w-6xl px-6">
         <p className="kicker">O que eu trato</p>
         <p className="mt-4 max-w-[52ch] text-azul-claro">
