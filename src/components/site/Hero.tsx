@@ -38,7 +38,7 @@ export function Hero() {
 
         <div className="relative flex items-end justify-center">
           <img
-            src={heroAsset.url}
+            src={heroAsset}
             alt="Dr. Clenilson Júnior sorrindo, de terno azul-marinho e camisa branca, com os braços cruzados"
             width={768}
             height={1152}
