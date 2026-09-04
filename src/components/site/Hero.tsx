@@ -7,7 +7,7 @@ export function Hero() {
     <section id="topo" className="relative overflow-hidden bg-azul-profundo px-6 pb-0 pt-16 md:px-6 md:pt-16">
       <div className="mx-auto grid max-w-6xl grid-cols-1 items-end gap-10 pt-16 md:min-h-[calc(100svh-4rem)] md:grid-cols-2 md:gap-8 md:pt-0">
         <div className="self-center pb-0 md:py-8">
-          <h1 className="max-w-[15ch] font-display text-5xl font-bold leading-tight text-creme md:text-6xl lg:text-7xl">
+          <h1 className="max-w-[15ch] font-display text-4xl font-bold leading-tight text-creme md:text-5xl lg:text-6xl">
             Ansiedade, depressão e dependência{" "}
             <span className="text-ciano">têm tratamento.</span>
           </h1>
