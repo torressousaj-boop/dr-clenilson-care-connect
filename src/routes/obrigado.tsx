@@ -12,7 +12,7 @@ import { Contato } from "@/components/site/Contato";
 import { Rodape } from "@/components/site/Rodape";
 import { BotaoFlutuante } from "@/components/site/BotaoFlutuante";
 
-const title = "Obrigado | Dr. Clenilson Júnior | Médico Psiquiatra";
+const title = "Obrigado | Dr. Clenilson Júnior | Médico | Psiquiatria";
 const description =
   "Obrigado pelo contato. Em breve retornaremos para confirmar o agendamento da sua consulta.";
 

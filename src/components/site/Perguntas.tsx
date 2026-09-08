@@ -17,10 +17,6 @@ const perguntas = [
     q: "Quanto tempo demora pra melhorar?",
     a: "Os primeiros sinais costumam aparecer em algumas semanas. Estabilidade leva meses. Eu prefiro dizer isso agora do que prometer resultado rápido e você desistir no primeiro tropeço.",
   },
-  {
-    q: "Vocês atendem por convênio?",
-    a: "Fale com o consultório pelo WhatsApp: informamos os convênios atendidos no momento, valores da consulta particular e como emitir recibo para reembolso.",
-  },
 ];
 
 export function Perguntas() {
@@ -29,7 +25,7 @@ export function Perguntas() {
   return (
     <section id="faq" className="scroll-mt-20 bg-creme py-24 text-tinta md:py-32">
       <div className="mx-auto max-w-3xl px-6">
-        <p className="kicker kicker-claro">Perguntas que a família faz</p>
+        <p className="kicker kicker-claro">Dúvidas frequentes</p>
 
         <div className="mt-12 divide-y divide-tinta/15 border-y border-tinta/15">
           {perguntas.map((item, i) => {

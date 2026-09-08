@@ -23,7 +23,7 @@ export function Hero() {
           </div>
 
           <p className="mt-6 text-sm text-creme/60">
-            Dr. Clenilson Júnior, psiquiatra, {CRM}.
+            Dr. Clenilson Júnior, psiquiatria, {CRM}.
           </p>
         </div>
 
