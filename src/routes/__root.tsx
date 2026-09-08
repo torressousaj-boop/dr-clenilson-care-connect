@@ -77,14 +77,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Dr. Clenilson Júnior | Médico Psiquiatra" },
+      { title: "Dr. Clenilson Júnior | Médico | Psiquiatria" },
       {
         name: "description",
         content:
           "Atendimento psiquiátrico para transtornos de personalidade, dependência química e alcoolismo.",
       },
       { name: "author", content: "Dr. Clenilson Júnior" },
-      { property: "og:title", content: "Dr. Clenilson Júnior | Médico Psiquiatra" },
+      { property: "og:title", content: "Dr. Clenilson Júnior | Médico | Psiquiatria" },
       {
         property: "og:description",
         content:

@@ -33,7 +33,7 @@ export function Navbar() {
             }`}
 
           />
-          <span className="leading-tight">Dr. Clenilson Júnior</span>
+          <span className="leading-tight">Dr. Clenilson Junior</span>
         </a>
 
         <div className="hidden items-center gap-6 md:flex">
