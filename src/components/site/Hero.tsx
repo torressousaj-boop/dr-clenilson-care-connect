@@ -33,7 +33,7 @@ export function Hero() {
             alt="Dr. Clenilson Júnior sorrindo, de terno azul-marinho e camisa branca, com a mão no paletó, em fundo azul escuro"
             width={1280}
             height={1920}
-            className="h-[360px] w-full select-none rounded-t-xl object-cover object-top md:h-auto md:max-h-[calc(100svh-4rem)] md:max-w-none md:rounded-none md:object-contain md:object-bottom"
+            className="h-auto w-full select-none rounded-t-xl object-contain object-bottom md:h-auto md:max-h-[calc(100svh-4rem)] md:max-w-none md:rounded-none"
           />
         </div>
 
