@@ -1,4 +1,4 @@
-import sobreImg from "@/assets/sobre-clenilson.jpg";
+import sobreAsset from "@/assets/sobre-clenilson.jpg.asset.json";
 import { useReveal } from "@/hooks/use-reveal";
 import { CtaButton } from "./CtaButton";
 
@@ -13,10 +13,10 @@ export function QuemE() {
         className="reveal mx-auto grid max-w-6xl items-center gap-12 px-6 md:grid-cols-2 md:gap-16"
       >
         <img
-          src={sobreImg}
-          alt="Dr. Clenilson Júnior de terno escuro, sentado à mesa do consultório durante um atendimento"
-          width={1600}
-          height={2400}
+          src={sobreAsset.url}
+          alt="Dr. Clenilson Júnior de terno azul-marinho, sentado em uma poltrona de couro e segurando uma xícara de café"
+          width={1280}
+          height={1920}
           loading="lazy"
           className="w-full rounded-xl object-cover md:max-h-[560px]"
         />
