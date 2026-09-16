@@ -127,7 +127,7 @@ export function ComoFunciona() {
         </ol>
 
         <p className="mt-16 max-w-[34ch] font-display text-[1.5rem] font-semibold text-tinta md:text-[2rem]">
-          A linha volta porque o tratamento aguenta. Recair não tira ninguém daqui.
+          A linha volta porque o tratamento aguenta. Um dia ruim não tira ninguém daqui.
         </p>
       </div>
     </section>
