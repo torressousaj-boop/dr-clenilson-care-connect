@@ -8,13 +8,13 @@ export function Hero() {
       <div className="mx-auto grid max-w-6xl grid-cols-1 items-end gap-10 pt-16 md:min-h-[calc(100svh-4rem)] md:grid-cols-2 md:gap-8 md:pt-0">
         <div className="self-center pb-0 md:py-8">
           <h1 className="max-w-[15ch] font-display text-4xl font-bold leading-tight text-creme md:text-5xl lg:text-6xl">
-            Ansiedade, depressão e dependência{" "}
+            Ansiedade, depressão e insônia{" "}
             <span className="text-ciano">têm tratamento.</span>
           </h1>
 
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-creme/85">
-            Consulta psiquiátrica particular para transtornos de personalidade, dependência química,
-            alcoolismo, depressão e ansiedade. Avaliação, diagnóstico e plano de acompanhamento, com
+            Consulta psiquiátrica particular para ansiedade, depressão, insônia, estresse e
+            transtornos de personalidade. Avaliação, diagnóstico e plano de acompanhamento, com
             retorno marcado.
           </p>
 
