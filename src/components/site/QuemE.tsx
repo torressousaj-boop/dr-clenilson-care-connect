@@ -28,7 +28,7 @@ export function QuemE() {
 
           <div className="mt-6 space-y-5 text-creme/80">
             <p>
-              Sou médico com atuação em psiquiatria, CRM-MA 14933, com atendimento particular em São Luís. A maior parte das pessoas que chega até mim já vem cansada: cansada da ansiedade que não dá trégua, da depressão que voltou depois de melhorar, da dependência que promete parar e não para. Muitas já passaram por outros tratamentos que não funcionaram.
+              Sou médico com atuação em psiquiatria, CRM-MA 14933, com atendimento particular em São Luís. A maior parte das pessoas que chega até mim já vem cansada: cansada da ansiedade que não dá trégua, da depressão que voltou depois de melhorar, das noites mal dormidas que se repetem. Muitas já passaram por outros tratamentos que não funcionaram.
             </p>
             <p>
               Meu trabalho começa antes do remédio. Começa ouvindo o que você já tentou, o que ajudou por um tempo e por que não se sustentou. A partir daí a gente monta um plano com combinados claros: o que fazer no dia bom, o que fazer no dia ruim e quando me procurar. Medicação entra quando é necessária, sempre explicada.

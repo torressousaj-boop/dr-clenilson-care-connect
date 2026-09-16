@@ -13,7 +13,7 @@ import { BotaoFlutuante } from "@/components/site/BotaoFlutuante";
 
 const title = "Dr. Clenilson Júnior | Médico | Psiquiatria em São Luís";
 const description =
-  "Consulta psiquiátrica particular para ansiedade, depressão, dependência química, alcoolismo e transtornos de personalidade. Avaliação, diagnóstico e acompanhamento.";
+  "Consulta psiquiátrica particular para ansiedade, depressão, insônia, estresse e transtornos de personalidade. Avaliação, diagnóstico e acompanhamento.";
 
 export const Route = createFileRoute("/")({
   head: () => ({

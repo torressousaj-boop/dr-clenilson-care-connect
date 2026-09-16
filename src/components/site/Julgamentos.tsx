@@ -1,8 +1,8 @@
 import { useReveal } from "@/hooks/use-reveal";
 
 const frases = [
-  "É só ele querer parar.",
-  "Isso é falta de vergonha na cara.",
+  "É só ele querer mudar.",
+  "Isso é falta de força de vontade.",
   "Ela faz isso pra chamar atenção.",
   "Já tentamos de tudo, não adianta.",
 ];

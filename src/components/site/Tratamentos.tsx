@@ -25,11 +25,11 @@ export function Tratamentos() {
 
           <article className="rounded-2xl bg-azul px-8 py-12 md:py-16">
             <h3 className="text-[1.75rem] font-semibold text-creme md:text-[2.125rem]">
-              Dependência química e alcoolismo
+              Insônia e transtornos do sono
             </h3>
             <p className="mt-4 text-creme/80">
-              Tratamento continuado, com manejo de abstinência, redução de danos quando é o caminho
-              possível e envolvimento da família no plano.
+              Acompanhamento continuado para sono irregular, despertares noturnos e cansaço
+              persistente, com envolvimento da família no plano.
             </p>
           </article>
 
