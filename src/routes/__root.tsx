@@ -81,14 +81,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Atendimento psiquiátrico para transtornos de personalidade, dependência química e alcoolismo.",
+          "Atendimento em psiquiatria para ansiedade, depressão e transtornos de personalidade.",
       },
       { name: "author", content: "Dr. Clenilson Júnior" },
       { property: "og:title", content: "Dr. Clenilson Júnior | Médico | Psiquiatria" },
       {
         property: "og:description",
         content:
-          "Atendimento psiquiátrico para transtornos de personalidade, dependência química e alcoolismo.",
+          "Atendimento em psiquiatria para ansiedade, depressão e transtornos de personalidade.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
