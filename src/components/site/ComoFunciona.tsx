@@ -101,7 +101,7 @@ export function ComoFunciona() {
                       letterSpacing={0.8}
                       style={{ fontFamily: "var(--font-body)" }}
                     >
-                      RECAÍDA
+                      PIORA
                     </text>
                   </svg>
                 )}
